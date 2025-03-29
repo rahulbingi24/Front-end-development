@@ -1,0 +1,80 @@
+:root {
+    --primary-color : #476ef7;
+    --primary-text-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comfortaa", serif;
+}
+
+#body-parent {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+#solid-circle {
+    height: 950px;
+    width: 950px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+    right: -375px;
+    top: -25px;
+    z-index: 1;
+}
+
+#header-home {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    padding: 0px 20px;
+    width: 100%;
+}
+
+.logo-class {
+    display: flex;
+    align-items: center;
+}
+
+#click-here-button {
+    /* position: absolute; */
+    /* z-index: 2;
+    right: 10px;
+    top: 10px; */
+    background-color: white;
+    color: var(--primary-color);
+    font-size: large;
+    font-weight: 600;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+#name {
+    color: var(--primary-color);
+    display: inline-block;
+    font-size: 150px;
+}
+
+.form-floating {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 15px;
+
+}
+
+#main-content {
+    margin-left: 25px;
+}
