@@ -1,0 +1,61 @@
+:root {
+    --primary-color : #000000;
+    --secondary-color : #1DCD9F;
+    --third-color : #222222;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+#container {
+    height: 100vh;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#font-container {
+    display: flex;
+    gap: 20px;
+    background-color: var(--third-color);
+    position: absolute;
+    bottom: 20px;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    padding: 10px;
+}
+
+input::placeholder {
+    opacity: 0.25;
+}
+
+input {
+    /* display: flex; */
+    background-color: var(--primary-color);
+    font-size: 56px;
+    text-align: center;
+    border: none;
+    padding: 20px;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    background-color: var(--third-color);
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(40, 40, 40);
+}
