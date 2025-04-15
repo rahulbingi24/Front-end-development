@@ -1,0 +1,92 @@
+:root {
+    --outer-color : #0e2844;
+    --inner-color : #123458;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--outer-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* container */
+#container {
+    background-color: var(--inner-color);
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    border-bottom: 3px double white;
+    margin-bottom: 10px;
+}
+
+#tools {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+#range {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="range"] {
+    width: 240px;
+}
+
+#checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#display {
+    height: 40px;
+    width: 280px;
+    border-radius: 8px;
+    border: none;
+    cursor:default;
+    color: black;
+    text-align: center;
+    font-size: 24px;
+}
+
+#display:focus {
+    outline: none;
+}
+
+#button {
+    margin-top: 10px;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    background-color: green;
+    padding: 10px 20px;
+    cursor: pointer;
+
+}
