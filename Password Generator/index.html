@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <h2>Password Generator</h2>
+        <div id="tools">
+            <!-- div element for input:range -->
+            <div id="range">
+                <!-- input:range label -->
+                <label for="p-range">Password Length: <span id="length-value">12</span></label>
+                <!-- input:range field with min and max length of 4 to 18 -->
+                <input type="range" name="p-range" id="length" value="12" min="4" max="18">
+            </div>
+            <div id="checkbox">
+                <div>
+                    <input type="checkbox" name="uppercase" id="uppercase"><label for="uppercase"> Include
+                        Uppercase</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="lowercase" id="lowercase"><label for="lowercase"> Include
+                        Lowercase</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="numbers" id="numbers"><label for="numbers"> Include Numbers</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="symbols" id="symbols"><label for="characters"> Include
+                        Symbols</label>
+                </div>
+            </div>
+        </div>
+        <div>
+            <input type="text" name="display" id="display" readonly>
+        </div>
+        <div id="button">
+            <button type="button" id="generate">Generate</button>
+            <button type="button" id="copy">Copy</button>
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
